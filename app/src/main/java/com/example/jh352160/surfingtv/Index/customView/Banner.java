@@ -1,4 +1,4 @@
-package com.example.jh352160.surfingtv.customView;
+package com.example.jh352160.surfingtv.Index.customView;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;
@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.example.jh352160.surfingtv.R;
-import com.example.jh352160.surfingtv.customView.adapter.BannerPagerAdapter;
+import com.example.jh352160.surfingtv.Index.customView.adapter.BannerPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

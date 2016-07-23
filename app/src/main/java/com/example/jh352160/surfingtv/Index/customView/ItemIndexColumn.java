@@ -1,4 +1,4 @@
-package com.example.jh352160.surfingtv.customView;
+package com.example.jh352160.surfingtv.Index.customView;
 
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
 import com.example.jh352160.surfingtv.R;
-import com.example.jh352160.surfingtv.customView.adapter.CommodityRecyclerViewAdapter;
+import com.example.jh352160.surfingtv.Index.customView.adapter.CommodityRecyclerViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

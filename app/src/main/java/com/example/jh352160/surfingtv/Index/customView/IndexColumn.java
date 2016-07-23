@@ -1,4 +1,4 @@
-package com.example.jh352160.surfingtv.customView;
+package com.example.jh352160.surfingtv.Index.customView;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.jh352160.surfingtv.R;
-import com.example.jh352160.surfingtv.customView.adapter.IndexColumnAdapter;
+import com.example.jh352160.surfingtv.Index.customView.adapter.IndexColumnAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

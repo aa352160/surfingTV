@@ -1,4 +1,4 @@
-package com.example.jh352160.surfingtv.customView;
+package com.example.jh352160.surfingtv.Index.customView;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.jh352160.surfingtv.R;
-import com.example.jh352160.surfingtv.customView.adapter.StarsightListAdapter;
+import com.example.jh352160.surfingtv.Index.customView.adapter.StarsightListAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,6 @@ import java.util.List;
  */
 
 public class Starsight extends LinearLayout {
-    // TODO: 2016/7/20 first finish this
     private Context mContext;
     ListView listView;
 

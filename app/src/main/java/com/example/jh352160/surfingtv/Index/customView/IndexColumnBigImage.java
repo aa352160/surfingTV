@@ -1,4 +1,4 @@
-package com.example.jh352160.surfingtv.customView;
+package com.example.jh352160.surfingtv.Index.customView;
 
 import android.content.Context;
 import android.util.AttributeSet;

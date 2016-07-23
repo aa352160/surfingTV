@@ -1,4 +1,4 @@
-package com.example.jh352160.surfingtv.customView.adapter;
+package com.example.jh352160.surfingtv.Index.customView.adapter;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;

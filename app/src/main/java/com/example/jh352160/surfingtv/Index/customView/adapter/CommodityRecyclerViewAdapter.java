@@ -1,4 +1,4 @@
-package com.example.jh352160.surfingtv.customView.adapter;
+package com.example.jh352160.surfingtv.Index.customView.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

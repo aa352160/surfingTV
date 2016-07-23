@@ -1,4 +1,4 @@
-package com.example.jh352160.surfingtv.customView.adapter;
+package com.example.jh352160.surfingtv.Index.customView.adapter;
 
 import android.content.Context;
 import android.view.View;

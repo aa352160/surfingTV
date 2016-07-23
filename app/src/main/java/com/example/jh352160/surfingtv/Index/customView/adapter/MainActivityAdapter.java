@@ -1,4 +1,4 @@
-package com.example.jh352160.surfingtv.customView.adapter;
+package com.example.jh352160.surfingtv.Index.customView.adapter;
 
 import android.content.Context;
 import android.view.View;
@@ -8,8 +8,8 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.example.jh352160.surfingtv.R;
-import com.example.jh352160.surfingtv.customView.IndexColumn;
-import com.example.jh352160.surfingtv.customView.Starsight;
+import com.example.jh352160.surfingtv.Index.customView.IndexColumn;
+import com.example.jh352160.surfingtv.Index.customView.Starsight;
 
 import java.util.List;
 

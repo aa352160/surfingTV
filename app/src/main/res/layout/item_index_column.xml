@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.jh352160.surfingtv.customView.IndexColumnBigImage
+    <com.example.jh352160.surfingtv.Index.customView.IndexColumnBigImage
         android:id="@+id/column_big_image"
         android:layout_width="match_parent"
         android:layout_height="230dp" />

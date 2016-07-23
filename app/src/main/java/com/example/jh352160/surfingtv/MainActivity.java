@@ -6,11 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ListView;
 
-import com.example.jh352160.surfingtv.customView.Banner;
-import com.example.jh352160.surfingtv.customView.IndexColumn;
-import com.example.jh352160.surfingtv.customView.IndexThematic;
-import com.example.jh352160.surfingtv.customView.Starsight;
-import com.example.jh352160.surfingtv.customView.adapter.MainActivityAdapter;
+import com.example.jh352160.surfingtv.Index.customView.Banner;
+import com.example.jh352160.surfingtv.Index.customView.IndexColumn;
+import com.example.jh352160.surfingtv.Index.customView.IndexThematic;
+import com.example.jh352160.surfingtv.Index.customView.Starsight;
+import com.example.jh352160.surfingtv.Index.customView.adapter.MainActivityAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
