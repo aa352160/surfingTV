@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -28,6 +29,7 @@ public class Starsight_main extends AppCompatActivity implements View.OnClickLis
     StarsightAdapter adapter;
     List<View> viewList;
     ListView imageList;
+    Button imagebutton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -59,6 +61,7 @@ public class Starsight_main extends AppCompatActivity implements View.OnClickLis
         iv3=(ImageView)findViewById(R.id.imageView3);
         iv4=(ImageView)findViewById(R.id.imageView4);
         iv5=(ImageView)findViewById(R.id.imageView5);
+        imagebutton=(Button)findViewById(R.id.imageButton);
         imageList=(ListView)findViewById(R.id.imageList);
         viewList=new ArrayList<>();
         int[] allStar={R.drawable.starsight_anne_hathaway, R.drawable.starsight_big_image,
@@ -74,6 +77,7 @@ public class Starsight_main extends AppCompatActivity implements View.OnClickLis
         map.put("star2",star2);
         map.put("star3",star3);
         map.put("star4",star4);
+
     }
 
     @Override
