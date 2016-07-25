@@ -1,5 +1,6 @@
 package com.example.jh352160.surfingtv.starsight;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.aspsine.swipetoloadlayout.OnLoadMoreListener;
+import com.aspsine.swipetoloadlayout.SwipeToLoadLayout;
 import com.example.jh352160.surfingtv.R;
 import com.example.jh352160.surfingtv.starsight.customView.StarsightImage;
 import com.example.jh352160.surfingtv.starsight.customView.adapter.StarsightAdapter;
@@ -30,6 +33,7 @@ public class Starsight_main extends AppCompatActivity implements View.OnClickLis
     List<View> viewList;
     ListView imageList;
     Button imagebutton;
+    SwipeToLoadLayout swipeToLoadLayout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,6 +47,26 @@ public class Starsight_main extends AppCompatActivity implements View.OnClickLis
         }
         adapter=new StarsightAdapter(this,android.R.layout.simple_expandable_list_item_1,viewList);
         imageList.setAdapter(adapter);
+
+        swipeToLoadLayout.setOnLoadMoreListener(new OnLoadMoreListener() {
+            @Override
+            public void onLoadMore() {
+                new AsyncTask<Void,Void,Void>(){
+
+                    @Override
+                    protected Void doInBackground(Void... voids) {
+                        return null;
+                    }
+
+                    @Override
+                    protected void onPostExecute(Void aVoid) {
+                        super.onPostExecute(aVoid);
+                        LoadToMore();
+                        swipeToLoadLayout.setLoadingMore(false);
+                    }
+                }.execute();
+            }
+        });
     }
 
     private void init(){
@@ -62,7 +86,8 @@ public class Starsight_main extends AppCompatActivity implements View.OnClickLis
         iv4=(ImageView)findViewById(R.id.imageView4);
         iv5=(ImageView)findViewById(R.id.imageView5);
         imagebutton=(Button)findViewById(R.id.imageButton);
-        imageList=(ListView)findViewById(R.id.imageList);
+        imageList=(ListView)findViewById(R.id.swipe_target);
+        swipeToLoadLayout=(SwipeToLoadLayout)findViewById(R.id.swipetoload);
         viewList=new ArrayList<>();
         int[] allStar={R.drawable.starsight_anne_hathaway, R.drawable.starsight_big_image,
                     R.drawable.starsight_big_image2, R.drawable.starsight_big_image3,
@@ -127,6 +152,12 @@ public class Starsight_main extends AppCompatActivity implements View.OnClickLis
             viewList.add(starsightImage);
         }
         adapter=new StarsightAdapter(this,android.R.layout.simple_expandable_list_item_1,viewList);
+        imageList.setAdapter(adapter);
+    }
+
+    private void LoadToMore(){
+        //do something for adapter
+        ListView imageList=(ListView)findViewById(R.id.swipe_target);
         imageList.setAdapter(adapter);
     }
 }

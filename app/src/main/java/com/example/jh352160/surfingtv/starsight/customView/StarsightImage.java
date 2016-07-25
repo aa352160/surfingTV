@@ -13,15 +13,15 @@ import android.widget.TextView;
 import com.example.jh352160.surfingtv.R;
 
 /**
- * Created by jh352160 on 2016/7/21.
+ * Created by jh352160 on 2016/7/21
  */
 
 public class StarsightImage extends RelativeLayout {
 
-    ImageView bigImage;
-    Button imageButton;
+    private ImageView bigImage;
+    private Button imageButton;
     private Boolean isPrise=false;
-    TextView pricetext;
+    private TextView pricetext;
 
     public StarsightImage(final Context context) {
         super(context);
